@@ -1,0 +1,76 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-color: #181a1b;
+    color: #e0e0e0;
+}
+
+.navbar,
+.footer,
+header,
+footer {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+}
+
+a, .nav-link, .navbar-brand {
+    color: #90caf9 !important;
+}
+
+    a:hover, .nav-link:hover, .navbar-brand:hover {
+        color: #ffffff !important;
+    }
+
+.card, .box-shadow, .border-bottom, .border-top {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+input, textarea, select, .form-control {
+    background-color: #23272b !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+::placeholder {
+    color: #b0b0b0 !important;
+    opacity: 1;
+}
+
+table, th, td {
+    color: #e0e0e0 !important;
+    background-color: #23272b !important;
+}
+
+.table thead th {
+    background-color: #23272b !important;
+    color: #ffffff !important;
+}
+
+.table {
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.centered {
+    text-align: center;
+    vertical-align: middle;
+}
