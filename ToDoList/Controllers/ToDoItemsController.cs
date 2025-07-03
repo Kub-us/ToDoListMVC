@@ -54,7 +54,7 @@ namespace ToDoList.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Description,IsCompleted,CreatedAt")] ToDoItems toDoItems)
+        public async Task<IActionResult> Create([Bind("Id,Title,Description,IsCompleted,CreatedAt,Deadline")] ToDoItems toDoItems)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace ToDoList.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Description,IsCompleted,CreatedAt")] ToDoItems toDoItems)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Description,IsCompleted,CreatedAt,Deadline")] ToDoItems toDoItems)
         {
             if (id != toDoItems.Id)
             {

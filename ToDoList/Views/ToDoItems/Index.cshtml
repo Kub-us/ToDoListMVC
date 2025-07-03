@@ -21,6 +21,9 @@
             <th class="centered">
                 Stworzono
             </th>
+            <th class="centered">
+                Deadline
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -36,6 +39,9 @@
             <td class="centered">
                 @Html.DisplayFor(modelItem => item.CreatedAt)
             </td>
+				<td class="centered">
+					@Html.DisplayFor(modelItem => item.Deadline)
+				</td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edytuj</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> |
